@@ -1,0 +1,16 @@
+.navbar-nav > li{
+  padding-left:20px;
+  padding-right:20px;
+}
+.navbar-custom {
+            background-color:teal;
+        }
+        /* Modify brand and text color */
+
+        .navbar-custom .navbar-brand,
+        .navbar-custom .navbar-text {
+            color: white !important;
+        }
+nav .navbar-nav li a{
+  color: white !important;
+  }
