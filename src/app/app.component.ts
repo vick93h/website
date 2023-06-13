@@ -7,6 +7,7 @@ import {AfterViewInit, Component, ElementRef, OnInit, ViewChild} from '@angular/
 })
 export class AppComponent implements OnInit,AfterViewInit{
   @ViewChild('login') loginRef!:ElementRef;
+  @ViewChild('menuMobile') menuMobileRef!:ElementRef;
 
   ngOnInit(): void {
 
@@ -27,5 +28,15 @@ export class AppComponent implements OnInit,AfterViewInit{
       console.log(this.loginRef.nativeElement.innerText);
     }, 1000);*/
     this.loginRef.nativeElement.style.display='none'
+    this.menuMobileRef.nativeElement.style.display='none'
+  }
+
+  clickMenuMobile() {
+    if(this.menuMobileRef.nativeElement.style.display=='block') {
+      this.menuMobileRef.nativeElement.style.display = 'none'
+    }
+    else {
+      this.menuMobileRef.nativeElement.style.display = 'block'
+    }
   }
 }
